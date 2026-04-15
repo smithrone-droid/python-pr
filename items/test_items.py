@@ -7,7 +7,7 @@ def test_items(browser):
     browser.get(link)
     time.sleep(30)
 
-    # Находим кнопку
+    # Находим кнопку добавления в корзину
     button = browser.find_element(By.CSS_SELECTOR, "button.btn-add-to-basket")
 
     # Проверяе видимость кнопки в контексте товара

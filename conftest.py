@@ -36,7 +36,7 @@ def browser(request):
 
     elif browser_name == "firefox":
         options = Options()
-        options.add_argument("--no-sandbox") # из-за особенностей кейса с профилями
+        options.add_argument("--no-sandbox") # из-за особенностей кейса с профилями браузера
 
         driver = webdriver.Firefox(
             service=FirefoxService(GeckoDriverManager().install()),
