@@ -10,5 +10,5 @@ def test_items(browser):
     # Находим кнопку
     button = browser.find_element(By.CSS_SELECTOR, "button.btn-add-to-basket")
 
-    # Проверяем, видимость
+    # Проверяе видимость кнопки в контексте товара
     assert button.is_displayed()
